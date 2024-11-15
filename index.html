@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كورس الفاتحون</title>
+    <meta name="description" content="كورس الفاتحون يحتوي على شروحات خاصة ومفيدة إضافة إلى حسابات مخصصة">
+    <style>
+        /* إعدادات عامة */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            background-color: #f4f4f9;
+        }
+
+        /* الشريط العلوي */
+        .header {
+            background: linear-gradient(90deg, #4caf50, #1e88e5);
+            padding: 10px 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .navbar .nav-links li {
+            position: relative;
+        }
+
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            transition: background 0.3s ease;
+            display: block;
+            cursor: pointer;
+        }
+
+        .navbar .nav-links a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        /* القوائم المنسدلة */
+
+
+        .dropdown-menu li {
+            text-align: right;
+        }
+
+        /* القوائم المنسدلة */
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: #333; /* خلفية داكنة */
+            list-style: none;
+            padding: 10px 0;
+            margin: 0;
+            border-radius: 5px;
+            border: 1px solid #444; /* حدود داكنة */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+
+        /* النص داخل القوائم المنسدلة */
+        .dropdown-menu a {
+            color: white; /* النص باللون الأبيض */
+            text-decoration: none; /* إزالة التسطير */
+            padding: 10px 15px;
+            display: block;
+        }
+
+        /* النص عند تحريك الماوس فوق العناصر */
+        .dropdown-menu a:hover {
+            background: #555; /* خلفية داكنة عند التفاعل */
+            color: white; /* النص يبقى أبيض */
+        }
+
+        /* لإظهار القائمة عند الضغط */
+        .dropdown.show .dropdown-menu {
+            display: block;
+        }
+
+
+        /* الوصف في منتصف الشاشة */
+        .main-content {
+            text-align: center;
+            padding: 50px 20px;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+
+        .main-content h2 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        .main-content p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الشريط العلوي -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">كورس الفاتحون</h1>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">الرئيسية</a>
+                        <!-- <ul class="dropdown-menu">
+                            <li><a href="#">قسم 1</a></li>
+                            <li><a href="#">قسم 2</a></li>
+                        </ul> -->
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">نصائح اللعبة</a>
+                        <ul class="dropdown-menu">
+                            <!-- <li><a href="pal/pal.html">القلعة</a></li>
+                            <li><a href="hero/hero.html">الأبطال</a></li>
+                            <li><a href="gaer.html">العتاد</a></li>
+                            <li><a href="events.html">الأحداث</a></li>
+                            <li><a href="researsh.html">البحوث</a></li> -->
+                            <li><a href="dan/dan.html">العرين</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">أدوات المساعدة</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="calculator time/cal.html">حساب الوقت</a></li>
+                            <li><a href="acceleration cal/acce.html">حساب التسريعات</a></li>
+                            <li><a href="recruitment/recru.html">حساب التجنيد</a></li>
+                            <li><a href="reso/resource.html">حساب الموارد</a></li>
+                            <li><a href="gold-cal/gold.html">حساب الذهب</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://discord.gg/PfZ6Pn3QX6">تواصل معنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- المحتوى الرئيسي -->
+    <main class="main-content">
+        <div class="description">
+            <h2>مرحبًا بكم في كورس الفاتحون</h2>
+            <p>
+                هذا الموقع يقدم لك مجموعة من الأدوات والنصائح القيمة التي تساعدك في تحسين أدائك داخل اللعبة. 
+                يمكنك الاستفادة من الأدوات المساعدة للحصول على حسابات دقيقة واحترافية.
+            </p>
+        </div>
+    </main>
+
+    <script>
+        // إضافة حدث عند الضغط على القوائم
+        // إضافة حدث عند الضغط على القوائم
+        document.querySelectorAll('.dropbtn').forEach(button => {
+            button.addEventListener('click', function (e) {
+                e.preventDefault();
+                const parent = this.parentElement;
+                parent.classList.toggle('show');
+                document.querySelectorAll('.dropdown').forEach(dropdown => {
+                    if (dropdown !== parent) {
+                        dropdown.classList.remove('show');
+                    }
+                });
+            });
+        });
+
+        // إخفاء القائمة عند الضغط خارجها
+        document.addEventListener('click', function (e) {
+            if (!e.target.closest('.dropdown')) {
+                document.querySelectorAll('.dropdown').forEach(dropdown => {
+                    dropdown.classList.remove('show');
+                });
+            }
+        });
+
+    </script>
+
+</body>
+</html>
