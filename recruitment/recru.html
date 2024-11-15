@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>التجنيد</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <h2>التجنيد</h2>
+            <div class="log"><a href="../index.html"><button>رجوع</button></a></div>
+        </div>
+        <div class="indicator">
+            <h2>التدريب الجنود</h2>
+            <button class="in50" id="showin5">T5</button>
+            <button class="in40" id="showin4">T4</button>
+            <button class="in30" id="showin3">T3</button>
+            <button class="in20" id="showin2">T2</button>
+            <button class="in10" id="showin1">T1</button>
+
+            <!-- مؤشر 5 -->
+            <div class="in5" id="in5">
+                <h3>T3</h3>
+                <form >
+                    <div class="number">
+                        <label for="type1">عدد الجنود: </label>
+                        <input type="number" id="type1" name="type1" required>
+
+                        <label for="type2">مرات التجنيد: </label>
+                        <input type="number" id="type2" name="type2" required>
+
+                        <label for="type3">قمح مشاة وعجلات :</label>
+                        <input type="number" id="type3" name="type3" required>
+
+                        <label for="type4">خشب مشاة وعجلات :</label>
+                        <input type="number" id="type4" name="type4" required>
+
+                        <label for="type5">قمح فرسان ورماة :</label>
+                        <input type="number" id="type5" name="type5" required>
+
+                        <label for="type6">خشب فرسان ورماة :</label>
+                        <input type="number" id="type6" name="type6" required>
+
+                        <div class="input-group" dir="rtl">
+                            <ul>
+                                <label> ادخال الوقت الاصلي</label>
+                                <li><input type="number" id="days5" placeholder="ادخال اليوم"></li>
+                                <li><input type="number" id="hours5" placeholder="ادخال الساعة"></li>
+                                <li><input type="number" id="minutes5" placeholder="ادخال الدقيقة"></li>
+                                <li><input type="number" id="seconds5" placeholder="ادخال الثواني"></li>
+                                <input type="number" id="percentage5" placeholder="ادخال %">
+                            </ul>
+                        </div>
+                        <button type="button" onclick="calculateTotal()">Calculate</button>
+                        <input type="reset" value="Clear" class="f5">
+                    </div>
+
+                    <div id="result5">
+                        <h2>النتيجة</h2>
+                        <p id="totalResult5"></p>
+                        <p id="result5"></p>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- مؤشر 4 -->
+            <div class="in4" id="in4">
+                <h3>T4</h3>
+                <form >
+                    <div class="number">
+                        <label for="type7">عدد الجنود: </label>
+                        <input type="number" id="type7" name="type7" required>
+
+                        <label for="type8">مرات التجنيد: </label>
+                        <input type="number" id="type8" name="type8" required>
+
+                        <label for="type9">قمح مشاة وعجلات :</label>
+                        <input type="number" id="type9" name="type9" required>
+
+                        <label for="type10">خشب مشاة وعجلات :</label>
+                        <input type="number" id="type10" name="type10" required>
+
+                        <label for="type11">قمح فرسان ورماة :</label>
+                        <input type="number" id="type11" name="type11" required>
+
+                        <label for="type12">خشب فرسان ورماة :</label>
+                        <input type="number" id="type12" name="type12" required>
+                        <div class="input-group" dir="rtl">
+                            <ul>
+                                <label> ادخال الوقت الاصلي</label>
+                                <li><input type="number" id="days4" placeholder="ادخال اليوم"></li>
+                                <li><input type="number" id="hours4" placeholder="ادخال الساعة"></li>
+                                <li><input type="number" id="minutes4" placeholder="ادخال الدقيقة"></li>
+                                <li><input type="number" id="seconds4" placeholder="ادخال الثواني"></li>
+                                <input type="number" id="percentage4" placeholder="ادخال %">
+                            </ul>
+                        </div>
+
+                        <button type="button" onclick="calculateTotal()">Calculate</button>
+                        <input type="reset" value="Clear" class="f4">
+                    </div>
+                    <div id="result4">
+                        <h2>النتيجة</h2>
+                        <p id="totalResult4"></p>
+                        <p id="result4"></p>
+                    </div>
+                </form>
+            </div>
+            <!-- مؤشر 3 -->
+            <div class="in3" id="in3">
+                <h3>T3</h3>
+                <form >
+                    <div class="number">
+                        <label for="type13">عدد الجنود: </label>
+                        <input type="number" id="type13" name="type13" required>
+
+                        <label for="type14">مرات التجنيد: </label>
+                        <input type="number" id="type14" name="type14" required>
+
+                        <label for="type15">قمح مشاة وعجلات :</label>
+                        <input type="number" id="type15" name="type15" required>
+
+                        <label for="type16">خشب مشاة وعجلات :</label>
+                        <input type="number" id="type16" name="type16" required>
+
+                        <label for="type17">قمح فرسان ورماة :</label>
+                        <input type="number" id="type17" name="type17" required>
+
+                        <label for="type18">خشب فرسان ورماة :</label>
+                        <input type="number" id="type18" name="type18" required>
+                        <div class="input-group" dir="rtl">
+                            <ul>
+                                <label> ادخال الوقت الاصلي</label>
+                                <li><input type="number" id="days3" placeholder="ادخال اليوم"></li>
+                                <li><input type="number" id="hours3" placeholder="ادخال الساعة"></li>
+                                <li><input type="number" id="minutes3" placeholder="ادخال الدقيقة"></li>
+                                <li><input type="number" id="seconds3" placeholder="ادخال الثواني"></li>
+                                <input type="number" id="percentage3" placeholder="ادخال %">
+                            </ul>
+                        </div>
+
+                        <button type="button" onclick="calculateTotal()">Calculate</button>
+                        <input type="reset" value="Clear" class="f3">
+                    </div>
+                    <div id="result3">
+                        <h2>النتيجة</h2>
+                        <p id="totalResult3"></p>
+                        <p id="result3"></p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- مؤشر 2 -->
+            <div class="in2" id="in2">
+                <h3>T2</h3>
+                <form >
+                    <div class="number">
+                        <label for="type19">عدد الجنود: </label>
+                        <input type="number" id="type19" name="type19" required>
+
+                        <label for="type20">مرات التجنيد: </label>
+                        <input type="number" id="type20" name="type20" required>
+
+                        <label for="type21">قمح مشاة وعجلات :</label>
+                        <input type="number" id="type21" name="type21" required>
+
+                        <label for="type22">خشب مشاة وعجلات :</label>
+                        <input type="number" id="type22" name="type22" required>
+
+                        <label for="type23">قمح فرسان ورماة :</label>
+                        <input type="number" id="type23" name="type23" required>
+
+                        <label for="type24">خشب فرسان ورماة :</label>
+                        <input type="number" id="type24" name="type24" required>
+                        <div class="input-group" dir="rtl">
+                            <ul>
+                                <label> ادخال الوقت الاصلي</label>
+                                <li><input type="number" id="days2" placeholder="ادخال اليوم"></li>
+                                <li><input type="number" id="hours2" placeholder="ادخال الساعة"></li>
+                                <li><input type="number" id="minutes2" placeholder="ادخال الدقيقة"></li>
+                                <li><input type="number" id="seconds2" placeholder="ادخال الثواني"></li>
+                                <input type="number" id="percentage2" placeholder="ادخال %">
+                            </ul>
+                        </div>
+
+                        <button type="button" onclick="calculateTotal()">Calculate</button>
+                        <input type="reset" value="Clear" class="f2">
+                    </div>
+                    <div id="result2">
+                        <h2>النتيجة</h2>
+                        <p id="totalResult2"></p>
+                        <p id="result2"></p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- مؤشر 1 -->
+            <div class="in1" id="in1">
+                <h3>T1</h3>
+                <form >
+                    <div class="number">
+                        <label for="type25">عدد الجنود: </label>
+                        <input type="number" id="type25" name="type25" required>
+
+                        <label for="type26">مرات التجنيد: </label>
+                        <input type="number" id="type26" name="type26" required>
+
+                        <label for="type27">قمح مشاة وعجلات :</label>
+                        <input type="number" id="type27" name="type27" required>
+
+                        <label for="type28">خشب مشاة وعجلات :</label>
+                        <input type="number" id="type28" name="type28" required>
+
+                        <label for="type29">قمح فرسان ورماة :</label>
+                        <input type="number" id="type29" name="type29" required>
+
+                        <label for="type30">خشب فرسان ورماة :</label>
+                        <input type="number" id="type30" name="type30" required>
+                        <div class="input-group" dir="rtl">
+                            <ul>
+                                <label> ادخال الوقت الاصلي</label>
+                                <li><input type="number" id="days1" placeholder="ادخال اليوم"></li>
+                                <li><input type="number" id="hours1" placeholder="ادخال الساعة"></li>
+                                <li><input type="number" id="minutes1" placeholder="ادخال الدقيقة"></li>
+                                <li><input type="number" id="seconds1" placeholder="ادخال الثواني"></li>
+                                <input type="number" id="percentage1" placeholder="ادخال %">
+                            </ul>
+                        </div>
+
+                        <button type="button" onclick="calculateTotal()">Calculate</button>
+                        <input type="reset" value="Clear" class="f1">
+                    </div>
+                    <div id="result1">
+                        <h2>النتيجة</h2>
+                        <p id="totalResult1"></p>
+                        <p id="result1"></p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="recru.js"></script>
+</body>
+</html>

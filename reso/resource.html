@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حساب الموارد</title>
+    <link rel="stylesheet" href="reso.css"> <!-- قم بتغيير اسم الملف إلى اسم ملف النمط الخاص بك -->
+</head>
+<body>
+    <div class="container">
+        <h1>حساب الموارد</h1>
+        <div class="top">
+            <button class="s1" id="showForm1">القمح والخشب</button>
+            <button class="s2" id="showForm2">الحديد</button>
+            <div class="log"><a href="../index.html"><button>رجوع</button></a></div>
+        </div>
+        <div class="form" id="form1">
+            <h2>القمح و الخشب </h2>
+            <form id="resoform1">
+                <div class="input-group">
+                    <label for="type1">الرجاء إدخال الكمية 5,000,000 :</label>
+                    <input type="number" id="type1" name="type1" required>
+                </div>
+                <div class="input-group">
+                    <label for="type2">الرجاء إدخال الكمية 1,500,000:</label>
+                    <input type="number" id="type2" name="type2" required>
+                </div>
+                <div class="input-group">
+                    <label for="type3">الرجاء إدخال الكمية 500,000:</label>
+                    <input type="number" id="type3" name="type3" required>
+                </div>
+                <div class="input-group">
+                    <label for="type4">الرجاء إدخال الكمية 150,000:</label>
+                    <input type="number" id="type4" name="type4" required>
+                </div>
+                <div class="input-group">
+                    <label for="type5">الرجاء إدخال الكمية 50,000:</label>
+                    <input type="number" id="type5" name="type5" required>
+                </div>
+                <div class="input-group">
+                    <label for="type6">الرجاء إدخال الكمية 30,000:</label>
+                    <input type="number" id="type6" name="type6" required>
+                </div>
+                <div class="input-group">
+                    <label for="type7">الرجاء إدخال الكمية 10,000:</label>
+                    <input type="number" id="type7" name="type7" required>
+                </div>
+                <div class="input-group">
+                    <label for="type8">الرجاء إدخال الكمية 4,000:</label>
+                    <input type="number" id="type8" name="type8" required>
+                </div>
+                <div class="input-group">
+                    <label for="type9">الرجاء إدخال الكمية 2,000:</label>
+                    <input type="number" id="type9" name="type9" required>
+                </div>
+                <div class="input-group">
+                    <label for="type10"> الرجاء إدخال الكمية 1,000:</label>
+                    <input type="number" id="type10" name="type10" required>
+                </div>
+                <button type="button" onclick="calculateTotal()">Calculate</button>
+                <!-- <button type="button" onclick="calculateTotal('form1')">Calculate</button> -->
+                <input type="reset" value="claer" class="f1">
+            </form>
+            <div id="result1">
+                <h2>النتيجة</h2>
+                <p id="totalResult1"></p>
+            </div> 
+        </div>
+
+        <div class="form" id="form2">
+            <h2>الحديد</h2>  
+            <form id="resoform2">
+                <div class="input-group">
+                    <label for="type11">الرجاء إدخال الكمية 500,000 :</label>
+                    <input type="number" id="type11" name="type11" required>
+                </div>
+                <div class="input-group">
+                    <label for="type12">الرجاء إدخال الكمية 150,000:</label>
+                    <input type="number" id="type12" name="type12" required>
+                </div>
+                <div class="input-group">
+                    <label for="type13">الرجاء إدخال الكمية 50,000:</label>
+                    <input type="number" id="type13" name="type13" required>
+                </div>
+                <div class="input-group">
+                    <label for="type14">الرجاء إدخال الكمية 15,000:</label>
+                    <input type="number" id="type14" name="type14" required>
+                </div>
+                <div class="input-group">
+                    <label for="type15">الرجاء إدخال الكمية 5,000:</label>
+                    <input type="number" id="type15" name="type15" required>
+                </div>
+                <div class="input-group">
+                    <label for="type16">الرجاء إدخال الكمية 3,000:</label>
+                    <input type="number" id="type16" name="type16" required>
+                </div>
+                <div class="input-group">
+                    <label for="type17">الرجاء إدخال الكمية 1,000:</label>
+                    <input type="number" id="type17" name="type17" required>
+                </div>
+                <div class="input-group">
+                    <label for="type18">الرجاء إدخال الكمية 400:</label>
+                    <input type="number" id="type18" name="type18" required>
+                </div>
+                <div class="input-group">
+                    <label for="type19">الرجاء إدخال الكمية 200:</label>
+                    <input type="number" id="type19" name="type19" required>
+                </div>
+                <div class="input-group">
+                    <label for="type20">الرجاء إدخال الكمية 100:</label>
+                    <input type="number" id="type20" name="type20" required>
+                </div>
+                <button type="button" onclick="calculateTotal()">Calculate</button>
+                <!-- <button type="button" onclick="calculateTotal('form2')">Calculate</button> -->
+                <input type="reset" value="claer" class="f2">
+            </form>
+            <div id="result2">
+                <h2>النتيجة</h2>
+                <p id="totalResult2"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

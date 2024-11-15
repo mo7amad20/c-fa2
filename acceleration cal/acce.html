@@ -1,0 +1,272 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>حاسبة التسريعات</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <h1>حاسبة التسريعات</h1>
+            <div class="log"><a href="../home-page.html"><button>رجوع</button></a></div>
+        </div>
+        <div class="time-a">
+            <form id="accelerationForm">
+                <ul>
+                    <li>
+                        <label for="days">ادخال كمية 3 ايام:</label>
+                        <input type="number" id="days" name="days" placeholder="3 days" required>
+                    </li>
+
+                    <li>
+                        <label for="hours">ادخال كمية 24 ساعة:</label>
+                        <input type="number" id="hours1" name="hours1" placeholder="24 hours" required>
+                    </li>
+
+                    <li>
+                        <label for="hours">ادخال كمية 12 ساعة:</label>
+                        <input type="number" id="hours2" name="hours2" placeholder="12 hours" required>
+                    </li>
+
+                    <li>
+                        <label for="hours">ادخال كمية 4 ساعات:</label>
+                        <input type="number" id="hours3" name="hours3" placeholder="4 hours" required>
+                    </li>
+
+                    <li>
+                        <label for="hours">ادخال كمية ساعتين:</label>
+                        <input type="number" id="hours4" name="hours4" placeholder="2 hours" required>
+                    </li>
+
+                    <li>
+                        <label for="hours">ادخال كمية 1 ساعة:</label>
+                        <input type="number" id="hours5" name="hours5" placeholder="1 hour" required>
+                    </li>
+
+                    <li>
+                        <label for="minutes">ادخال كمية 5 دقائق:</label>
+                        <input type="number" id="minutes1" name="minutes1" placeholder="5 minutes" required>
+                    </li>
+
+                    <li>
+                        <label for="minutes">ادخال كمية 3 دقائق:</label>
+                        <input type="number" id="minutes2" name="minutes2" placeholder="3 minutes" required>
+                    </li>
+
+                    <li>
+                        <label for="minutes">ادخال كمية 1 دقيقة:</label>
+                        <input type="number" id="minutes3" name="minutes3" placeholder="1 minute" required>
+                    </li>
+                </ul>
+    
+                <button type="button" onclick="calculateAcceleration()">Calculate</button>
+                <input type="reset" value="claer" class="f1">
+            </form>
+    
+        </div>
+        <div id="result">
+            <h2>Total Time</h2>
+            <p id="totalDays"></p>
+            <p id="totalHours"></p>
+            <p id="totalMinutes"></p>
+            <p id="totalSeconds"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حاسبة التسريعات</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            direction: rtl;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        label {
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button, .f1 {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin: 5px 1%;
+        }
+
+        button:hover, .f1:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <h1>حاسبة التسريعات</h1>
+            <div class="log"><a href="../index.html"><button>رجوع</button></a></div>
+        </div>
+        <div class="time-a">
+            <form id="accelerationForm">
+                <ul>
+                    <li>
+                        <label for="days">ادخال كمية 3 ايام:</label>
+                        <input type="number" id="days" name="days" placeholder="3 days" required>
+                    </li>
+                    <li>
+                        <label for="hours1">ادخال كمية 24 ساعة:</label>
+                        <input type="number" id="hours1" name="hours1" placeholder="24 hours" required>
+                    </li>
+                    <li>
+                        <label for="hours2">ادخال كمية 12 ساعة:</label>
+                        <input type="number" id="hours2" name="hours2" placeholder="12 hours" required>
+                    </li>
+                    <li>
+                        <label for="hours3">ادخال كمية 4 ساعات:</label>
+                        <input type="number" id="hours3" name="hours3" placeholder="4 hours" required>
+                    </li>
+                    <li>
+                        <label for="hours4">ادخال كمية ساعتين:</label>
+                        <input type="number" id="hours4" name="hours4" placeholder="2 hours" required>
+                    </li>
+                    <li>
+                        <label for="hours5">ادخال كمية 1 ساعة:</label>
+                        <input type="number" id="hours5" name="hours5" placeholder="1 hour" required>
+                    </li>
+                    <li>
+                        <label for="minutes1">ادخال كمية 5 دقائق:</label>
+                        <input type="number" id="minutes1" name="minutes1" placeholder="5 minutes" required>
+                    </li>
+                    <li>
+                        <label for="minutes2">ادخال كمية 3 دقائق:</label>
+                        <input type="number" id="minutes2" name="minutes2" placeholder="3 minutes" required>
+                    </li>
+                    <li>
+                        <label for="minutes3">ادخال كمية 1 دقيقة:</label>
+                        <input type="number" id="minutes3" name="minutes3" placeholder="1 minute" required>
+                    </li>
+                </ul>
+                <div style="display: flex; justify-content: space-between;">
+                    <button type="button" onclick="calculateAcceleration()">احسب المجموع</button>
+                    <input type="reset" value="مسح الحقول" class="f1">
+                </div>
+            </form>
+        </div>
+        <div id="result">
+            <h2>الوقت الإجمالي</h2>
+            <p id="totalDays">Days: 0</p>
+            <p id="totalHours">Hours: 0</p>
+            <p id="totalMinutes">Minutes: 0</p>
+            <p id="totalSeconds">Seconds: 0</p>
+        </div>
+    </div>
+
+    <script>
+        function calculateAcceleration() {
+            // الحصول على القيم من الإدخالات
+            const days = parseInt(document.getElementById('days').value) || 0;
+            const hours1 = parseInt(document.getElementById('hours1').value) || 0;
+            const hours2 = parseInt(document.getElementById('hours2').value) || 0;
+            const hours3 = parseInt(document.getElementById('hours3').value) || 0;
+            const hours4 = parseInt(document.getElementById('hours4').value) || 0;
+            const hours5 = parseInt(document.getElementById('hours5').value) || 0;
+            const minutes1 = parseInt(document.getElementById('minutes1').value) || 0;
+            const minutes2 = parseInt(document.getElementById('minutes2').value) || 0;
+            const minutes3 = parseInt(document.getElementById('minutes3').value) || 0;
+
+            // تحويل الأوقات إلى ثوانٍ لحساب المجموع
+            let totalSeconds = 0;
+
+            totalSeconds += days * 3 * 24 * 60 * 60;  // تحويل التسريعات 3 أيام إلى ثوانٍ
+            totalSeconds += hours1 * 24 * 60 * 60;   // تحويل 24 ساعة إلى ثوانٍ
+            totalSeconds += hours2 * 12 * 60 * 60;   // تحويل 12 ساعة إلى ثوانٍ
+            totalSeconds += hours3 * 4 * 60 * 60;    // تحويل 4 ساعات إلى ثوانٍ
+            totalSeconds += hours4 * 2 * 60 * 60;    // تحويل ساعتين إلى ثوانٍ
+            totalSeconds += hours5 * 60 * 60;        // تحويل ساعة واحدة إلى ثوانٍ
+            totalSeconds += minutes1 * 5 * 60;       // تحويل 5 دقائق إلى ثوانٍ
+            totalSeconds += minutes2 * 3 * 60;       // تحويل 3 دقائق إلى ثوانٍ
+            totalSeconds += minutes3 * 60;           // تحويل دقيقة واحدة إلى ثوانٍ
+
+            // تحويل مجموع الثواني إلى (أيام، ساعات، دقائق، ثوانٍ)
+            const totalDays = Math.floor(totalSeconds / (24 * 60 * 60));
+            totalSeconds %= (24 * 60 * 60);
+            const totalHours = Math.floor(totalSeconds / 3600);
+            totalSeconds %= 3600;
+            const totalMinutes = Math.floor(totalSeconds / 60);
+            const totalSecondsRemaining = totalSeconds % 60;
+
+            // عرض النتائج
+            displayResult(totalDays, totalHours, totalMinutes, totalSecondsRemaining);
+        }
+
+        function displayResult(days, hours, minutes, seconds) {
+            // تحديث العرض في الصفحة
+            document.getElementById('totalDays').innerText = `Days: ${days}`;
+            document.getElementById('totalHours').innerText = `Hours: ${hours}`;
+            document.getElementById('totalMinutes').innerText = `Minutes: ${minutes}`;
+            document.getElementById('totalSeconds').innerText = `Seconds: ${seconds}`;
+        }
+    </script>
+</body>
+</html>

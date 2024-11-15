@@ -1,0 +1,53 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h2{
+    text-align: center;
+}
+
+
+.continer {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 700px;
+    flex-wrap: wrap;
+    margin: auto auto;
+}
+
+button{
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px auto;
+
+}
+button:hover {
+    background-color: #45a049;
+}
+
+.dan10, .dan20, .dan30, .dan40, .dan50, .dan60, .dan70, .dan80, .dan90, .dann100 ,.dan110 , .dan120{
+    display: none; /* أخفي العناصر عند البداية */
+}
+.da1, .da2, .da3, .da4, .da5, .da6, .da7, .da8, .da9, .da10 , .da11, .da110, .da120{
+    height: 150px;
+}
+.d1, .d2, .d3, .d4, .d5, .d6, .d7, .d8, .d9, .d10, .d11 , .d110, .d12{
+    position: absolute;
+    height: 50px;
+    margin-right: 100px;
+    margin-top: -54px;
+    border-radius: inherit;
+    padding: 0;
+}

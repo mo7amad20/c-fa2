@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>حساب الذهب</title>
+</head>
+<body>
+    <div class="container">
+        <h1>حساب الذهب</h1>
+        <form id="goldForm">
+            <div class="input-group">
+                <label for="type1">الرجاء ادخال الكمية 150,000 :</label>
+                <input type="number" id="type1" name="type1" required>
+            </div>
+
+            <div class="input-group">
+                <label for="type2">الرجاء ادخال الكمية 50,000:</label>
+                <input type="number" id="type2" name="type2" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="type3">الرجاء ادخال الكمية 10,000:</label>
+                <input type="number" id="type3" name="type3" required>
+            </div>
+
+            <div class="input-group">
+                <label for="type4">الرجاء ادخال الكمية 2,000:</label>
+                <input type="number" id="type4" name="type4" required>
+            </div>
+
+            <div class="input-group">
+                <label for="type5">الرجاء ادخال الكمية 1,000:</label>
+                <input type="number" id="type5" name="type5" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="type6">الرجاء ادخال الكمية 200:</label>
+                <input type="number" id="type6" name="type6" required>
+            </div>
+
+            <div class="input-group">
+                <label for="type7">الرجاء ادخال الكمية 100:</label>
+                <input type="number" id="type7" name="type7" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="type8">الرجاء ادخال الكمية 50:</label>
+                <input type="number" id="type8" name="type8" required>
+            </div>
+
+            <div class="input-group">
+                <label for="type9">الرجاء ادخال الكمية 20:</label>
+                <input type="number" id="type9" name="type9" required>
+            </div>
+
+            <div class="input-group">
+                <label for="type10">الرجاء ادخال الكمية 10:</label>
+                <input type="number" id="type10" name="type10" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="type11">الرجاء ادخال الكمية 5:</label>
+                <input type="number" id="type11" name="type11" required>
+            </div>
+            <!-- Add similar input groups for other types -->
+
+            <button type="button" onclick="calculateTotal()">Calculate</button>
+            <input type="reset" value="claer" class="f1">
+        </form>
+        <div class="log"><a href="../index.html"><button>رجوع</button></a></div>
+
+        <div id="result">
+            <h2>النتيجة</h2>
+            <p id="totalResult"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

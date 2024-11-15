@@ -1,0 +1,103 @@
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-top: 60px;
+
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+input:focus{
+    background: #abafab90;
+}
+
+button{
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.top {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+h1 {
+    margin-top: 180px;
+ }
+#result {
+    margin-top: 20px;
+}
+
+
+ */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    direction: rtl;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-top: 60px;
+}
+
+.form {
+    display: none; /* إخفاء النماذج بشكل افتراضي */
+    margin-top: 20px;
+}
+
+
+button ,.f2,.f1 {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+input:focus{
+    background: #abafab90;
+}
+.input-group {
+    margin-bottom: 15px;
+}
+
+#result {
+    margin-top: 20px;
+
+}
+

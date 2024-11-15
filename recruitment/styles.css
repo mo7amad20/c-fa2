@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 700px;
+    flex-wrap: wrap;
+    margin: auto auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+li{
+    display: block;
+    margin: 5px auto;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+button, .f5, .f4, .f3, .f2, .f1{
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px auto;
+
+}
+.f5, .f4 , .f3 ,.f2, .f1{
+    width: 70px;
+    height: 35px;
+    
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result5, #result4, #result3, #result2, #result1, h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.log {
+    text-align: center;
+    margin-top: 5px;
+}
+.top{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.in5, .in4, .in3, .in2, .in1 {
+    display: none; /* أخفي العناصر عند البداية */
+}
+
+.in50, .in40, .in30, .in20, .in10{
+    background: #4caf50;
+    color: #fff;
+}
+
+/* .in50, .in40, .in30, .in20, .in10:active{
+    background: #6ce170;
+} */
